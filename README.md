@@ -1,6 +1,9 @@
 # Go implementation GraphQL
 > simple Golang setup with modules utilizing GraphQL
 
+- https://github.com/maapteh/graphql-golang
+- https://github.com/maapteh/graphql-nodejs
+
 ## PRE-REQUISITES
 - have golang installed locally for development
 
