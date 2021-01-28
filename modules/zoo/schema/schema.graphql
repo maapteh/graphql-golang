@@ -1,0 +1,30 @@
+type Crocodile {
+  id: Int!
+  name: String!
+  sex: Gender!
+  birthDate: Timestamp!
+  age: Int!
+}
+
+input CrocodileInput {
+  name: String!
+  sex: Gender!
+  birthDate: Timestamp!
+  age: Int!
+}
+
+enum Gender {
+  M
+  F
+}
+
+extend type Query {
+  crocodiles: [Crocodile!]!
+  crocodile(id: Int!): Crocodile
+}
+
+extend type Mutation {
+  addCrocodile(input: CrocodileInput!): Crocodile!
+}
+
+scalar Timestamp
